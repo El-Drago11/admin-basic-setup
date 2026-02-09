@@ -1,0 +1,27 @@
+/* Loader animations - Tailwind v4 @theme extensions */
+@theme {
+  --animate-dot-wave: dot-wave 1.2s ease-in-out infinite;
+  --animate-pulse-soft: pulse-soft 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes dot-wave {
+  0%, 60%, 100% {
+    transform: translateY(0) scale(0.85);
+    opacity: 0.5;
+  }
+  30% {
+    transform: translateY(-10px) scale(1.1);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-soft {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

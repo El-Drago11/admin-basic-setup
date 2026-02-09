@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+/* Style imports */
+@import "./styles/loader.css";
+@import "./styles/app.css";
+
+/* Base theme customization */
+@theme {
+  --font-sans: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  @apply antialiased min-h-screen min-w-[320px] m-0 bg-gray-50 text-gray-900;
+}
